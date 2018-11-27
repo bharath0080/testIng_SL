@@ -21,8 +21,10 @@ class Test implements Serializable {
     ]
     def config = defaults + params
 
-    jenkins.echo "buildAndDeployDockerImageToDTR arguments: $config"
+    println "buildAndDeployDockerImageToDTR arguments: $config"
     if (!config.name) {
-      jenkins.error "The name parameter is required."
+      println "The name parameter is required."
+    }else {
+      println "OKkkkkkkkkkkkk"
     }
   }
