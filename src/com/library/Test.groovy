@@ -21,7 +21,7 @@ class Test implements Serializable {
     ]
     def config = defaults + params
 
-    println "buildAndDeployDockerImageToDTR arguments: $config"
+    println "arguments: $config"
     if (!config.name) {
       println "The name parameter is required."
     }else {
