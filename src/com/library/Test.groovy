@@ -14,7 +14,8 @@ class Test implements Serializable {
   def mapExample(Map<String, Object> params) {
     def defaults = [
       name                : null, //required
-      language            : "java" // optional
+      language            : "java", // optional
+      mapWithInMap        : [ test : "InSideMap"]
       
     ]
     jenkins.echo "${params}"
