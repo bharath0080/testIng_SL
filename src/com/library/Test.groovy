@@ -26,6 +26,7 @@ class Test implements Serializable {
       jenkins.echo "The name parameter is required."
     }else {
       jenkins.echo "OKkkkkkkkkkkkk"
+      jenkins.echo config.mapWithInMap.test
     }
   }
 }
