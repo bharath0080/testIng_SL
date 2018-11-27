@@ -27,6 +27,7 @@ class Test implements Serializable {
     }else {
       jenkins.echo "OKkkkkkkkkkkkk"
       jenkins.echo config.mapWithInMap.test
+      jenkins.echo config.mapWithInMap.test1
     }
   }
 }
