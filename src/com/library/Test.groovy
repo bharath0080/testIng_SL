@@ -2,7 +2,7 @@ package com.library
 
 class Test implements Serializable {
   def jenkins
-  println "Testing---in SRC"
+  
   Test() throws Exception {
     throw new Exception("'this' must be passed.")
   }
@@ -17,13 +17,14 @@ class Test implements Serializable {
       language            : "java" // optional
       
     ]
+    jenkins.echo "${params}"
     def config = defaults + params
 
-    println "arguments: $config"
+    jenkins.echo "arguments: $config"
     if (!config.name) {
-      println "The name parameter is required."
+      jenkins.echo "The name parameter is required."
     }else {
-      println "OKkkkkkkkkkkkk"
+      jenkins.echo "OKkkkkkkkkkkkk"
     }
   }
 }
