@@ -1,10 +1,8 @@
-#!/usr/bin/env groovy
-
 package com.library
 
 class Test implements Serializable {
   def jenkins
-
+  println "Testing---in SRC"
   Test() throws Exception {
     throw new Exception("'this' must be passed.")
   }
