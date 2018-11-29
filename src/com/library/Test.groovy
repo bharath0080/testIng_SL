@@ -30,7 +30,8 @@ class Test implements Serializable {
 		  jenkins.echo "In for Loop"
 		  //jenkins.echo build
 		  //jenkins.echo build.test1
-		  jenkins.echo "${build}"
+		  jenkins.echo "${build.test}"
+		  jenkins.echo "${build.test1}"
 		  
 	  }
       jenkins.echo "OKkkkkkkkkkkkk"
