@@ -28,8 +28,8 @@ class Test implements Serializable {
 	  for(Map<String, Object> build : config.mapWithInMap){
 		  //jenkins.echo build
 		  //jenkins.echo build.test1
-		  //jenkins.echo "Testaaaaaa"
-		  bat "echo %build%"
+		  jenkins.echo "${build}"
+		  
 	  }
       jenkins.echo "OKkkkkkkkkkkkk"
       //jenkins.echo config.mapWithInMap.test
