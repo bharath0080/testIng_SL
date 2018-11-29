@@ -32,6 +32,9 @@ class Test implements Serializable {
 		  //jenkins.echo build.test1
 		  jenkins.echo "${build.test}"
 		  jenkins.echo "${build.test1}"
+		  if(build.test){
+			  jenkins.echo build.test
+		  }
 		  
 	  }
       jenkins.echo "OKkkkkkkkkkkkk"
