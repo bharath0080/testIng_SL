@@ -29,7 +29,7 @@ class Test implements Serializable {
 		  //jenkins.echo build
 		  //jenkins.echo build.test1
 		  //jenkins.echo "Testaaaaaa"
-		  jenkins.echo build
+		  bat "echo %build%"
 	  }
       jenkins.echo "OKkkkkkkkkkkkk"
       //jenkins.echo config.mapWithInMap.test
