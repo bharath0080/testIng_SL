@@ -25,6 +25,10 @@ class Test implements Serializable {
     if (!config.name) {
       jenkins.echo "The name parameter is required."
     }else {
+	  for(Map<String, Object> build : config.mapWithInMap){
+		  jenkins.echo build.test
+		  jenkins.echo build.test1
+	  }
       jenkins.echo "OKkkkkkkkkkkkk"
       jenkins.echo config.mapWithInMap.test
       jenkins.echo config.mapWithInMap.test1
